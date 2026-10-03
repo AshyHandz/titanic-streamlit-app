@@ -22,7 +22,7 @@ sex_encoded = 1 if sex=="Female" else 0
 embarked_encoded = 1 if embarked=="Cherbourg" else 0
 
 if st.button("Predict Survival"):
-  input_df = pd.Dataframe([{
+  input_df = pd.DataFrame([{
       'Pclass': pclass,
       'Sex': sex_encoded,
       'Age': age,
